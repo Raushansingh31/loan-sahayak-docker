@@ -17,6 +17,7 @@ app = FastAPI()
 origins = [
     "http://localhost:5173",  # React dev server
     "https://grih-khoj.onrender.com",  # Your deployed frontend
+    "https://grih-khoj-dockerized.onrender.com"
 ]
 
 app.add_middleware(     #add_middleware(): This function adds the CORSMiddleware to the FastAPI application, allowing specified origins to access the API.
